@@ -248,8 +248,7 @@ nav a:hover {
 
 .customer-reviews {
   width: 45%;
-  background: #f7f7f7;
-  color: #0D0D0D ;
+
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -262,8 +261,6 @@ nav a:hover {
 
 .slideshow-container {
   position: relative;
-  background-color: whitesmoke;
-  color: #0D0D0D;
   width: 100%;
   height: 300px;
   overflow: hidden;
