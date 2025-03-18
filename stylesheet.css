@@ -5,6 +5,7 @@ body, html {
   font-family: 'Arial', sans-serif;
   background-color: #0D0D0D;
   color: #FFFFFF;
+  overflow-x: hidden;
 }
 
 nav {
@@ -32,7 +33,7 @@ nav a:hover {
 }
 .hero {
   height: 100vh;
-  background: url('hero-image.jpg') center/cover no-repeat;
+  background: url('images/aleksandr-popov-DPspiXW2zWg-unsplash.jpg') center/cover no-repeat;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -49,6 +50,8 @@ nav a:hover {
 .about {
   padding: 100px 15%;
   text-align: center;
+  background-color: whitesmoke;
+  color: black;
 }
 
 .about h2 {
@@ -80,6 +83,9 @@ nav a:hover {
 .music {
   text-align: center;
   padding: 100px 15%;
+  background-color: whitesmoke;
+  color: #0D0D0D;
+
 }
 
 .music h2 {
@@ -120,4 +126,116 @@ nav a:hover {
   width: 100%;
   height: 100%;
   border: none;
+}
+
+/* contact */
+.contactSection {
+  display: flex;
+  justify-content: center;
+  padding: 50px;
+  color: black;
+  margin-top: 10vh;
+}
+
+.contactFormContainer {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.contactForm {
+  background-color: whitesmoke; 
+  border-radius: 50px;
+  padding: 40px;
+  width: 50%;
+  box-shadow: none;
+
+}
+
+.contactForm h2 {
+  font-size: 1.5em;
+
+}
+
+.contactForm input[type="text"],
+.contactForm input[type="email"],
+.contactForm textarea {
+  width: 100%;
+  margin-top: 1em;
+  padding: 12px;
+  border: 1px solid black;
+  border-radius: 5px;
+  background-color: transparent; 
+  color: white; 
+}
+
+.contactForm button {
+  margin-top: 1.5em;
+  padding: 12px 20px;
+  background-color: #555; 
+  border: none;
+  border-radius: 5px;
+}
+
+.ourContact {
+  padding: 40px;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: whitesmoke   ;
+}
+
+.ourContact p,
+.ourContact a {
+  font-size: 1.5em;
+  color: white; 
+  margin-bottom: 3vh;
+}
+
+.ourContact h6{
+  font-size: 1em;
+}
+
+.ourContact a:hover {
+  text-decoration: underline;
+  color: #ccc; 
+}
+
+#socials {
+  display: flex;
+  gap: 10px; 
+  align-items: center; 
+}
+
+#socials svg {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 32px; 
+  height: 32px;
+  color: white;
+}
+
+@media (max-width: 768px) {
+  .contactFormContainer {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contactForm, 
+  .ourContact {
+    width: 120%;
+    text-align: center;
+  }
+
+  .contactForm {
+    margin-bottom: 20px;
+  }
+
+  #socials {
+    justify-items: center;
+    align-self: center;
+  } 
 }
