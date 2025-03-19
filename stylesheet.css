@@ -32,7 +32,7 @@ nav a:hover {
 }
 .hero {
   height: 100vh;
-  background: url('images/aleksandr-popov-DPspiXW2zWg-unsplash.jpg') center/cover no-repeat;
+  background: url('images/martin-hexeberg-jp0VExvkRzY-unsplash.jpg') center/cover no-repeat;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -40,7 +40,7 @@ nav a:hover {
 }
 
 .hero h1 {
-  font-size: 48px;
+  font-size: 10vh;
   text-transform: uppercase;
   letter-spacing: 2px;
 }
