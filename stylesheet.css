@@ -1,3 +1,4 @@
+/* General Styles */
 body, html {
   margin: 0;
   padding: 0;
@@ -5,8 +6,24 @@ body, html {
   background-color: #0D0D0D;
   color: #FFFFFF;
   overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 
+h1, h2, h3, h6 {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:hover {
+  color: #FF6600;
+}
+
+/* Navigation */
 nav {
   position: fixed;
   top: 0;
@@ -27,64 +44,81 @@ nav a {
 
 nav a:hover {
   color: #FF6600; 
-
 }
+
+/* Hero Section */
 .hero {
   height: 100vh;
   background: url('images/martin-hexeberg-jp0VExvkRzY-unsplash.jpg') center/cover no-repeat;
   display: flex;
-  align-items: center;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
   text-align: center;
+  color: #FFFFFF;
+  text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
 }
 
 .hero h1 {
-  font-size: 10vh;
+  font-size: 8vh;
   text-transform: uppercase;
-  letter-spacing: 2px;
+  letter-spacing: 3px;
   font-weight: 900;
+  margin-bottom: 10px;
 }
 
+.hero p {
+  font-size: 1.5em;
+  font-weight: 300;
+  margin-top: 10px;
+  opacity: 0.9;
+}
 
+.hero button {
+  margin-top: 20px;
+  padding: 12px 30px;
+  font-size: 1em;
+  font-weight: 600;
+  color: #FFFFFF;
+  background-color: #FF6600;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.hero button:hover {
+  background-color: #E55A00;
+}
+
+/* About Section */
 .about {
-  padding: 100px 15%;
+  padding: 80px 15%;
   text-align: center;
-  background-color: whitesmoke;
-  color: black;
+  background-color: #1A1A1A;
+  color: #FFFFFF;
 }
 
 .about h2 {
-  font-size: 36px;
+  font-size: 2.5em;
   margin-bottom: 20px;
+  font-weight: 700;
 }
 
 .about p {
-  font-size: 18px;
-  line-height: 1.6;
+  font-size: 1.2em;
+  line-height: 1.8;
   max-width: 800px;
   margin: 0 auto;
+  opacity: 0.9;
 }
 
-@media (max-width: 768px) {
-  .hero h1 {
-      font-size: 32px;
-  }
-
-  .about h2 {
-      font-size: 28px;
-  }
-
-  .about p {
-      font-size: 16px;
-  }
-}
-
+/* Music Section */
 .music {
   text-align: center;
   padding: 100px 15%;
   background-color: whitesmoke;
   color: #0D0D0D;
-
 }
 
 .music h2 {
@@ -142,119 +176,125 @@ nav a:hover {
   border: none;
 }
 
-/* contact */
+/* Contact Section */
 .contactSection {
+  padding: 80px 15%;
+  background-color: #1A1A1A;
+  color: #FFFFFF;
   display: flex;
-  justify-content: center;
-  padding: 50px;
-  color: black;
-  margin-top: 10vh;
+  flex-wrap: wrap;
+  gap: 40px;
+  justify-content: space-between;
+  align-items: flex-start;
 }
 
 .contactFormContainer {
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
-  max-width: 1200px;
-}
-
-.contactForm {
-  background-color: whitesmoke; 
-  border-radius: 50px;
+  flex: 1 1 45%;
+  background-color: #0D0D0D;
   padding: 40px;
-  width: 50%;
-  box-shadow: none;
-
+  border-radius: 10px;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.5);
 }
 
 .contactForm h2 {
-  font-size: 1.5em;
-
+  font-size: 1.8em;
+  margin-bottom: 20px;
 }
 
-.contactForm input[type="text"],
-.contactForm input[type="email"],
+.contactForm input,
 .contactForm textarea {
   width: 100%;
-  margin-top: 1em;
+  margin-top: 10px;
   padding: 12px;
-  border: 1px solid black;
+  border: 1px solid #333;
   border-radius: 5px;
-  background-color: transparent; 
-  color: white; 
+  background-color: #1A1A1A;
+  color: #FFFFFF;
+  font-size: 1em;
 }
 
 .contactForm button {
-  margin-top: 1.5em;
+  margin-top: 20px;
   padding: 12px 20px;
-  background-color: #555; 
+  background-color: #FF6600;
   border: none;
   border-radius: 5px;
+  font-size: 1em;
+  font-weight: 600;
+  color: #FFFFFF;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.contactForm button:hover {
+  background-color: #E55A00;
 }
 
 .ourContact {
-  padding: 40px;
-  width: 50%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  color: whitesmoke   ;
+  flex: 1 1 45%;
+  text-align: center;
 }
 
-.ourContact p,
+.ourContact h6 {
+  font-size: 1.2em;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
 .ourContact a {
-  font-size: 1.5em;
-  color: white; 
-  margin-bottom: 3vh;
-}
-
-.ourContact h6{
-  font-size: 1em;
+  font-size: 1.1em;
+  color: #FF6600;
 }
 
 .ourContact a:hover {
   text-decoration: underline;
-  color: #ccc; 
 }
 
 #socials {
   display: flex;
-  gap: 10px; 
-  align-items: center; 
+  justify-content: center;
+  gap: 15px;
+  margin-top: 20px;
 }
 
 #socials svg {
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
-  width: 32px; 
+  width: 32px;
   height: 32px;
-  color: white;
+  color: #FF6600;
+  transition: color 0.3s ease;
 }
 
-@media (max-width: 768px) {
-  .contactFormContainer {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .contactForm, 
-  .ourContact {
-    width: 120%;
-    text-align: center;
-  }
-
-  .contactForm {
-    margin-bottom: 20px;
-  }
-
-  #socials {
-    justify-items: center;
-    align-self: center;
-  } 
+#socials svg:hover {
+  color: #E55A00;
 }
 
+/* About Me Section */
+.aboutMe {
+  text-align: center;
+  margin-top: 40px;
+}
 
+.aboutMe img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 20px;
+  border: 3px solid #FF6600;
+}
+
+.aboutMe h2 {
+  font-size: 1.8em;
+  margin-bottom: 10px;
+}
+
+.aboutMe p {
+  font-size: 1em;
+  line-height: 1.6;
+  opacity: 0.9;
+}
+
+/* Reviews Section */
 .reviews-container {
   display: flex;
   justify-content: space-between;
@@ -264,7 +304,6 @@ nav a:hover {
 .customer-reviews {
   width: 40%;
   padding: 20px;
-
 }
 
 .product-slideshow {
@@ -297,25 +336,57 @@ nav a:hover {
   display: block;
 }
 
-/* Footer Section */
+/* Footer */
 footer {
   background-color: #0D0D0D;
   color: #FFFFFF;
   text-align: center;
   padding: 20px;
-  position: relative;
-  bottom: 0;
-  width: 100%;
+  font-size: 0.9em;
+  opacity: 0.8;
 }
 
-
+/* Keyframes */
 @keyframes slideShow {
   0% { transform: translateX(0); }
   100% { transform: translateX(-100%); }
 }
 
-
+/* Media Queries */
 @media (max-width: 768px) {
+  .hero h1 {
+    font-size: 32px;
+  }
+
+  .about h2 {
+    font-size: 28px;
+  }
+
+  .about p {
+    font-size: 16px;
+  }
+
+  .contactFormContainer {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contactForm, 
+  .ourContact,
+  .aboutMe {
+    width: 100%;
+    text-align: center;
+  }
+
+  .contactForm {
+    margin-bottom: 20px;
+  }
+
+  #socials {
+    justify-items: center;
+    align-self: center;
+  }
+
   .reviews-container {
     flex-direction: column;
     align-items: center;
