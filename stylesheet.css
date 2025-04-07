@@ -91,29 +91,7 @@ nav a:hover {
   background-color: #E55A00;
 }
 
-/* About Section */
-.about {
-  padding: 80px 15%;
-  text-align: center;
-  background-color: #1A1A1A;
-  color: #FFFFFF;
-}
-
-.about h2 {
-  font-size: 2.5em;
-  margin-bottom: 20px;
-  font-weight: 700;
-}
-
-.about p {
-  font-size: 1.2em;
-  line-height: 1.8;
-  max-width: 800px;
-  margin: 0 auto;
-  opacity: 0.9;
-}
-
-/* Music Section */
+/* music */
 .music {
   text-align: center;
   padding: 100px 15%;
@@ -178,13 +156,13 @@ nav a:hover {
 
 /* Contact Section */
 .contactSection {
-  padding: 80px 15%;
-  background-color: #1A1A1A;
-  color: #FFFFFF;
   display: flex;
   flex-wrap: wrap;
   gap: 40px;
   justify-content: space-between;
+  padding: 80px 15%;
+  background-color: #1A1A1A;
+  color: #FFFFFF;
   align-items: flex-start;
 }
 
@@ -268,13 +246,34 @@ nav a:hover {
   color: #E55A00;
 }
 
-/* About Me Section */
-.aboutMe {
+/* about */
+.about {
+  flex: 1 1 45%;
+  background-color: #0D0D0D;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.5);
   text-align: center;
+  color: #FFFFFF;
   margin-top: 40px;
 }
 
-.aboutMe img {
+.about h2 {
+  font-size: 1.8em;
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+
+.about p {
+  font-size: 1.2em;
+  line-height: 1.8;
+  max-width: 800px;
+  margin: 0 auto;
+  opacity: 0.9;
+}
+
+
+.about img {
   width: 150px;
   height: 150px;
   border-radius: 50%;
@@ -283,12 +282,12 @@ nav a:hover {
   border: 3px solid #FF6600;
 }
 
-.aboutMe h2 {
+.about h2 {
   font-size: 1.8em;
   margin-bottom: 10px;
 }
 
-.aboutMe p {
+.about p {
   font-size: 1em;
   line-height: 1.6;
   opacity: 0.9;
@@ -366,9 +365,12 @@ footer {
     font-size: 16px;
   }
 
-  .contactFormContainer {
+  .contactSection {
     flex-direction: column;
-    align-items: center;
+  }
+
+  .contactFormContainer, .about {
+    flex: 1 1 100%;
   }
 
   .contactForm, 
