@@ -42,6 +42,12 @@ nav a {
   transition: color 0.3s ease;
 }
 
+.logo img {
+  max-width: 100px; 
+  height: auto;
+  display: block;
+}
+
 nav a:hover {
   color: #FF6600; 
 }
