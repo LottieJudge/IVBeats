@@ -13,116 +13,98 @@
 <body>
     <nav>
         <div class="logo">
-            <h1>IV Beats</h1>
+            <img src="images/IV beats logo.png" alt="IV Beats Logo">
         </div>
-        <div class="nav-links">
-            <a href="#about">About</a>
-            <a href="#music">Music</a>
+        <div class="nav-links">   
+            <a href="#music">Listen</a>
             <a href="#contact">Contact</a>
         </div>
     </nav>
     <header class="hero">
         <h1>One and Only</h1>
     </header>
-    <!-- <section id="about" class="about">
-        <h2>About IV Beats</h2>
-        <p>IV Beats is a cutting-edge music producer dedicated to crafting high-quality beats for artists, producers, and creatives worldwide. Our sound is bold, dynamic, and designed to inspire.</p>
-    </section> -->
- 
+    <section id="music" class="music">
+        <h2>Listen...</h2>
+        <div class="bento-box">
+            <div class="music-radio">
+                <iframe src="https://zeno.fm/player/national-hits-radio-ucfy" frameborder="0" scrolling="no"></iframe>
+                <a href="https://zeno.fm/" target="_blank" style="display: block; font-size: 0.9em; line-height: 10px;">A Zeno.FM Station</a>
+            </div>
+            <div class="music-soundCloud">
+                <iframe 
+                    src="https://w.soundcloud.com/player/?url=https%3A//soundcloud.com/ivbeats1/sets/after-life-the-mixtape&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true" 
+                    allow="autoplay">
+                </iframe>
+            </div>
+        </div>
+    </section>
 
-<section id="music" class="music">
-  <h2>Listen...</h2>
-  <div class="bento-box">
-    <div class="music-radio">
-      <iframe src="https://zeno.fm/player/national-hits-radio-ucfy" frameborder="0" scrolling="no"></iframe>
-      <a href="https://zeno.fm/" target="_blank" style="display: block; font-size: 0.9em; line-height: 10px;">A Zeno.FM Station</a>
-    </div>
-    <div class="music-soundCloud">
-      <iframe 
-        src="https://w.soundcloud.com/player/?url=https%3A//soundcloud.com/ivbeats1/sets/after-life-the-mixtape&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true" 
-        allow="autoplay">
-      </iframe>
-    </div>
-  </div>
-</section>
+    <!-- reviews/products -->
+    <section id="reviews" class="reviews">
+        <div class="reviews-container"> 
+            <div class="customer-reviews">
+                <h3>Reviews...</h3>
+                <p>"IV Beats helped me take my sound to the next level! Their production is incredible."</p>
+                <p>"I highly recommend IV Beats for anyone looking for top-quality beats and excellent service!"</p>
+            </div>
+            <div class="product-slideshow">
+                <div class="slideshow-container">
+                    <h3>Our Products</h3>
+                    <div class="slide">
+                        <img src="images/IV designs/1.png" alt="Product 1">
+                    </div>
+                    <div class="slide">
+                        <img src="images/IV designs/2.png" alt="Product 2">
+                    </div>
+                    <div class="slide">
+                        <img src="images/IV designs/3.png" alt="Product 3">
+                    </div>
+                </div>    
+            </div>
+        </div>
+    </section>
 
-
-<!-- reviews/prodycts -->
-  <section id="reviews" class="reviews">
-    <div class="reviews-container"> 
-      <div class="customer-reviews">
-        <h3>Reviews...</h3>
-        <p>"IV Beats helped me take my sound to the next level! Their production is incredible."</p>
-        <p>"I highly recommend IV Beats for anyone looking for top-quality beats and excellent service!"</p>
-      </div>
-      <div class="product-slideshow">
-        <div class="slideshow-container">
-          <h3>Our Products</h3>
-          <div class="slide">
-            <img src="images/IV designs/1.png" alt="Product 1">
-          </div>
-          <div class="slide">
-            <img src="images/IV designs/2.png" alt="Product 2">
-          </div>
-          <div class="slide">
-            <img src="images/IV designs/3.png" alt="Product 3">
-          </div>
-        </div>    
-      </div>
+    <!-- Contact Section -->
+    <div id="contactSection" class="contactSection">
+        <div class="contactFormContainer">
+            <div class="contactForm">
+                <form action="https://api.web3forms.com/submit" method="POST">
+                    <h2>Get in touch...</h2>
+                    <input type="hidden" name="access_key" value="4bd2efdc-364b-4017-80bb-25ee962e585b">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="first_name">
+                    
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email">
+                    
+                    <label for="message">Message:</label>
+                    <textarea placeholder="Let us know what you need..." name="message"></textarea>
+                    
+                    <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+                    <input type="hidden" name="redirect" value="confirmation page/confirmation.html">
+                    <button id="submitButton" type="submit">Send</button>
+                </form>
+            </div>
+            <div class="ourContact">
+                <h6>Email us:</h6>
+                <a href="mailto:ivbeatsproductions@gmail.com">ivbeatsproductions@gmail.com</a>
+                <h6>Follow us:</h6>
+                <div id="socials">  
+                    <a href="https://www.instagram.com/ivbeats_production/" target="_blank">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+                            <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="about">
+            <h2>About IV Beats</h2>
+            <p>IV Beats is a cutting-edge music producer dedicated to crafting high-quality beats for artists, producers, and creatives worldwide. Our sound is bold, dynamic, and designed to inspire.</p>
+        </div>
     </div>
-  </section>
-
-  <!-- Contact Section -->
-  <div id="contactSection" class="contactSection">
-    <div class="contactFormContainer">
-      <div class="contactForm">
-        <form action="https://api.web3forms.com/submit" method="POST">
-          <h2>Get in touch...</h2>
-          <input type="hidden" name="access_key" value="4bd2efdc-364b-4017-80bb-25ee962e585b">
-          <label for="name">Name:</label>
-          <input type="text" id="name" name="first_name">
-          
-          <label for="email">Email:</label>
-          <input type="email" id="email" name="email">
-          
-          <label for="message">Message:</label>
-          <textarea placeholder="Let us know what you need..." name="message"></textarea>
-          
-          <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
-          <input type="hidden" name="redirect" value="confirmation page/confirmation.html">
-          <button id="submitButton" type="submit">Send</button>
-        </form>
-      </div>
-      <div class="ourContact">
-        <h6>Email us:</h6>
-        <a href="mailto:ivbeatsproductions@gmail.com">ivbeatsproductions@gmail.com</a>
-        <h6>Follow us:</h6>
-      <div id="socials">  
-               <!-- Instagram -->
-        <a href="https://www.instagram.com/ivbeats_production/" target="_blank">
-        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
-            <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"/>
-        </svg>
-        </a>
-
-               <!-- SoundCloud -->
-        <a href="https://soundcloud.com/ivbeats1 " target="_blank" style="margin-left: 10px;">
-        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cloud" viewBox="0 0 16 16">
-            <path d="M8 0a5.53 5.53 0 0 0-5.52 5.5A3.5 3.5 0 0 0 4.5 12h7a3.5 3.5 0 0 0 0-7c-.086 0-.17.002-.252.006A5.525 5.525 0 0 0 8 0z"/>
-        </svg>
-        </a>
-      </div>
-      </div>
-    </div>
-    <div class="aboutMe">
-      <img src="images/ivan.jpg" alt="Ivan">
-      <h2>About Me</h2>
-      <p>Hi, I'm Ivan. Welcome to IVBeats. I create music that moves the soul and inspires the mind. Let's connect and create something amazing together.</p>
-    </div>
-  </div>
-</div>
-  <footer>
-    <p>&copy; 2025 IV Beats. All rights reserved.</p>
-  </footer>
+    <footer>
+        <p>&copy; 2025 IV Beats. All rights reserved.</p>
+    </footer>
 </body>
 </html>
