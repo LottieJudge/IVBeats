@@ -46,12 +46,61 @@ nav a {
   height: auto;
   display: block;
 }
+.hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+}
+
+.hamburger span {
+  width: 25px;
+  height: 3px;
+  background-color: #FFFFFF;
+  transition: all 0.3s ease;
+}
+
 
 nav a:hover {
   color: #FF6600; 
 }
 
-/* Hero Section */
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    gap: 10px;
+    position: absolute;
+    top: 70px;
+    right: 15%;
+    background-color: #0D0D0D;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+
+  .hamburger.active span:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+  }
+
+  .hamburger.active span:nth-child(2) {
+    opacity: 0;
+  }
+
+  .hamburger.active span:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px);
+  }
+}
+
+/* hero */
 .hero {
   height: 100vh;
   background: url('images/martin-hexeberg-jp0VExvkRzY-unsplash.jpg') center/cover no-repeat;
@@ -260,6 +309,7 @@ nav a:hover {
   text-align: center;
   color: #FFFFFF;
   margin-top: 40px;
+  margin-bottom: 60px; 
 }
 
 .about h2 {
