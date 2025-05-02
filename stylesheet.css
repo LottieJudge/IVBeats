@@ -149,7 +149,8 @@ nav a:hover {
 .music {
   text-align: center;
   padding: 100px 15%;
-  background-color: whitesmoke;
+  background-image: url('images/pawel-czerwinski-eybM9n4yrpE-unsplash.jpg');
+  background-size: contain;
   color: #0D0D0D;
 }
 
