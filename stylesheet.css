@@ -145,6 +145,10 @@ nav a:hover {
   background-color: #E55A00;
 }
 
+.spacer{
+  background-color: black;
+  height: 10vh;
+}
 /* music */
 .music {
   text-align: center;
