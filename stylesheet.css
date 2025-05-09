@@ -22,12 +22,12 @@ a:hover {
   color: #FF6600;
 }
 
-/* Navigation Styles */
+/* Nav */
 nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px 15%;
+  margin-right: 5%;
   background-color: #0D0D0D;
 }
 
