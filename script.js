@@ -30,5 +30,5 @@ document.addEventListener('DOMContentLoaded', function() {
   overlay.addEventListener('mousemove', showMainSite);
   overlay.tabIndex = 0; 
   overlay.focus();
-  setTimeout(showMainSite, 2100);
+  setTimeout(showMainSite, 900);
 });
