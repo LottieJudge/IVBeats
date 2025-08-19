@@ -7,6 +7,29 @@ body, html {
   overflow-x: hidden;
   scroll-behavior: smooth;
 }
+/* the logo on landing  */
+#logo-overlay {
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: #111;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+#logo-overlay img {
+  max-width: 60vw;
+  max-height: 60vh;
+  cursor: pointer;
+}
+body:not(.show-main) nav,
+body:not(.show-main) header,
+body:not(.show-main) .spacer,
+body:not(.show-main) section,
+body:not(.show-main) footer {
+  display: none;
+}
+
 
 h1, h2, h3, h6 {
   margin: 0;
