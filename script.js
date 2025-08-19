@@ -12,14 +12,19 @@ setInterval(showSlide, 3000);
 // adding in functionality for the logo overlay 
 document.addEventListener('DOMContentLoaded', function() {
   const overlay = document.getElementById('logo-overlay');
+  let overlayActive = true;
+
   function showMainSite() {
-      document.body.classList.add('show-main');
-      overlay.style.display = 'none';
-      // Optionally, remove event listeners here
+    if (!overlayActive) return;
+    overlayActive = false;
+    document.body.classList.add('show-main');
+    overlay.style.display = 'none';
   }
+
   overlay.addEventListener('click', showMainSite);
   overlay.addEventListener('keydown', showMainSite);
   overlay.addEventListener('mousemove', showMainSite);
-  overlay.tabIndex = 0; // Make it focusable for keydown
+  overlay.tabIndex = 0; 
   overlay.focus();
+  setTimeout(showMainSite, 2100);
 });
